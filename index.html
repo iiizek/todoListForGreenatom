@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>Список дел</title>
+</head>
+<body>
+	<div class="container">
+
+		<header class="header">
+			<h1 class="header__title-main">Список дел</h1>
+			<div class="header__todo-add-container">
+				<input class="header__input-add" type="text" placeholder="Новая задача">
+				<button class="header__button-add"></button>
+			</div>
+		</header>
+		
+		<div class="functional-bar">
+			<button class="functional-bar__button js-even">Все четные</button>
+			<button class="functional-bar__button js-odd">Все нечетные</button>
+			<button class="functional-bar__button js-first">Удалить первую задачу</button>
+			<button class="functional-bar__button js-last">Удалить последнюю задачу</button>
+		</div>
+
+		<main>
+
+			<div class="no-task">
+				<img class="no-task__svg" src="assets/no-task.svg" alt="no task image">
+				<p class="no-task__paragraph">Список дел пуст.<br>Отдыхайте</p>
+			</div>
+
+			<ul class="todo-list">
+
+			</ul>
+
+		</main>
+
+	</div>
+	
+	<script type="module" src="js/localstorage.js"></script>
+	<script type="module" src="js/main.js"></script>
+</body>
+</html>
